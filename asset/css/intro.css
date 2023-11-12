@@ -1,5 +1,49 @@
 body {
+    display: flex;
     background: url(/static/image/WallpaperDark.20d3d6f6\ \(1\).jpg) no-repeat 50% fixed;
     background-size: cover;
     background-color: #000;
+    width: 100vw;
+    height: 100vh;
+    color: #d9d9d9;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.iner-text {
+    border: solid yellow 2px;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    padding: 10px 20px;
+    width: 50%;
+    margin-top: 2%;
+}
+
+.button {
+    margin-top: 5%;
+}
+
+a {
+    font-size: inherit;
+    cursor: pointer;
+    padding: 18px 80px;
+    display: inline-block;
+    margin: 15px 0px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+	border-radius: 50px;
+    color: #fff;
+    overflow: hidden;
+	background: #25221e
 }
