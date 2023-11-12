@@ -15,6 +15,10 @@ func main() {
 		return
 	}
 
+	http.HandleFunc("/intro", func(w http.ResponseWriter, r *http.Request) {
+		temp.ExecuteTemplate(w, "intro", nil)
+	})
+
 	http.HandleFunc("/debut", func(w http.ResponseWriter, r *http.Request) {
 		temp.ExecuteTemplate(w, "debut", nil)
 	})
