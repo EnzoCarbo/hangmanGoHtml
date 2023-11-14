@@ -1,0 +1,654 @@
+The Darkin Blade
+Infernal Chains
+Umbral Dash
+World Ender
+Orb of Deception
+Fox-Fire
+Charm
+Spirit Rush
+Five Point Strike
+Twilight Shroud
+Shuriken Flip
+Perfect Execution
+Pulverize
+Headbutt
+Trample
+Unbreakable Will
+Avengerang
+Going Rogue
+Heroic Swing
+Dirty Fighting
+Bandage Toss
+Despair
+Tantrum
+Curse of the Sad Mummy
+Flash Frost
+Crystallize
+Frostbite
+Glacial Storm
+Disintegrate
+Incinerate
+Molten Shield
+Moonshot
+Moonlight Vigil
+Ranger's Focus
+Volley
+Hawkshot
+Enchanted Crystal Arrow
+Starsurge
+Celestial Expansion
+Comet of Legend
+Voice of Light
+Conquering Sands
+Arise
+Shifting Sands
+Emperor's Divide
+Cosmic Binding
+Caretaker's Shrine
+Magical Journey
+Tempered Fate
+Void Surge
+Above and Below
+Royal Maelstorm
+Endless Banquet
+Sear
+Pillar of Flame
+Conflagration
+Pyroclasm
+Winter's Bite
+Stand Behind Me
+Unbreakable
+Glacial Fissure
+Head Rush
+Blood Frenzy
+Chilling Scream
+Certain Death
+Piltover Peacemaker
+Yordle Snap Trap
+Ace in the Hole
+Precision Protocol
+Tactical Sweep
+Hookshot
+Hextech Ultimatum
+Noxious Blast
+Miasma
+Twin Fang
+Petrifying Gaze
+Rupture
+Feral Scream
+Vorpal Spikes
+Feast
+Phosphorus Bomb
+Valkyrie
+Gatling Gun
+Missile Barrage
+Decimate
+Crippling Strike
+Apprehend
+Noxian Guillotine
+Crescent Strike
+Pale Cascade
+Lunar Rush
+Moonfall
+Spinning Axe
+Blood Rush
+Stand Aside
+Whirling Death
+Infected Cleaver
+Burning Agony
+Masochism
+Sadism
+Timewinder
+Parallel Convergence
+Phase Dive
+Chronobreak
+Hate Spike
+Allure
+Whiplash
+Last Caress
+Mystic Shot
+Essence Flux
+Arcane Shift
+Trueshot Barrage
+Terrify
+Bountiful Harvest
+Reap
+Crowstorm
+Lunge
+Riposte
+Bladework
+Grand Challenge
+Urchin Strike
+Seastone Trident
+Playful
+Chum the Waters
+Winds of War
+Shield of Durand
+Justice Punch
+Hero's Entrance
+Parrrley
+Remove Scurvy
+Powder Keg
+Cannon Barrage
+Decisive Strike
+Courage
+Judgment
+Demacian Justice
+Boomerang Throw
+Boulder Toss
+Hyper
+Wallop
+Hop
+Crunch
+GNAR!
+Barrel Roll
+Drunken Rage
+Body Slam
+Explosive Cask
+End of the Line
+Smoke Screen
+Quickdraw
+Collateral Damage
+Hallowed Mist
+Snip Snip!
+Skip 'n Slash
+Needlework
+Rampage
+Spirit of Dread
+Devastating Charge
+Onslaught of Shadows
+Tentacle Smash
+Harsh Lesson
+Test of Spirit
+Leap of Faith
+Bladesurge
+Defiant Dance
+Flawless Duet
+Vanguard's Edge
+Rootcaller
+Brushmaker
+Triggerseed
+Daisy!
+Howling Gale
+Zephyr
+Eye of the Storm
+Monsoon
+Dragon Strike
+Golden Aegis
+Demacian Standard
+Cataclysm
+Leap Strike
+Empower
+Counter Strike
+Grandmaster's Might
+To the Skies!
+Shock Blast
+Thundering Blow
+Empowered Lightning Field
+Acceleration Gate
+Dancing Grenade
+Deadly Flourish
+Captive Audience
+Curtain Call
+Switcheroo!
+Zap!
+Flame Chompers!
+Super Mega Death Rocket!
+Icathian Rain
+Void Seeker
+Supercharge
+Killer Instinct
+Pierce
+Sentinel
+Rend
+Fate's Call
+Inner Flame
+Focused Resolve
+Inspire
+Mantra
+Lay Waste
+Wall of Pain
+Defile
+Requiem
+Null Sphere
+Nether Blade
+Force Pulse
+Riftwalk
+Bouncing Blades
+Preparation
+Shunpo
+Death Lotus
+Radiant Blast
+Celestial Blessing
+Starfire Spellblade
+Divine Judgment
+Reaping Slash
+Blade's Reach
+Shadow Step
+Umbral Trespass
+Thundering Shuriken
+Electrical Surge
+Lightning Rush
+Slicing Maelstrom
+Taste Their Fear
+Void Spike
+Leap
+Void Assault
+Beartrap on a Rope
+Violent Tendencies
+Jousting
+Chaaaaaaaarge!!!
+Caustic Spittle
+Bio-Arcane Barrage
+Void Ooze
+Living Artillery
+Ntofos Strikes
+Path Maker
+Footwork
+All Out
+Sigil of Malice
+Distortion
+Ethereal Chains
+Mimic
+Sonic Wave
+Safeguard
+Tempest
+Dragon's Rage
+Shield of Daybreak
+Eclipse
+Zenith Blade
+Solar Flare
+Blooming Blows
+Watch Out!
+Swirlseed
+Lilting Lullaby
+Ice Shard
+Ring of Frost
+Glacial Path
+Frozen Tomb
+Piercing Light
+Ardent Blaze
+Relentless Pursuit
+The Culling
+Glitterlance
+Whimsy
+Help, Pix!
+Wild Growth
+Light Binding
+Prismatic Barrier
+Lucent Singularity
+Final Spark
+Seismic Shard
+Thunderclap
+Ground Slam
+Unstoppable Force
+Call of the Void
+Void Swarm
+Malefic Visions
+Nether Grasp
+Bramble Smash
+Twisted Advance
+Sapling Toss
+Nature's Grasp
+Alpha Strike
+Meditate
+Wuju Style
+Highlander
+Ultra Mega Fire Kick
+Cozy Campfire
+Warm Hugs
+Breath of Life
+Double Up
+Strut
+Make It Rain
+Bullet Time
+Obliterate
+Indestructible
+Death's Grasp
+Realm of Death
+Dark Binding
+Tormented Shadow
+Black Shield
+Soul Shackles
+Darkin Daggers
+Hounds'Pursuit
+Eviscerate
+The Call of the Pack
+Aqua Prison
+Ebb and Flow
+Tidecaller's Blessing
+Tidal Wave
+Siphoning Strike
+Wither
+Spirit Fire
+Fury of the Sands
+Dredge Line
+Titan's Wrath
+Riptide
+Depth Charge
+Blooming Burst
+Shapesplitter
+Tangle-Barbs
+Pop Blossom
+Javelin Toss
+Takedown
+Bushwhack
+Pounce
+Primal Surge
+Swipe
+Aspect of the Cougar
+Formless Blade
+Jubilant Veil
+Slipstream
+Apotheosis
+Duskbringer
+Shroud of Darkness
+Unspeakable Horror
+Paranoia
+Consume
+Biggest Snowball Ever!
+Snowball Barrage
+Absolute Zero
+Undertow
+Vicious Strikes
+Reckless Swing
+Ragnarok
+Command: Attack
+Command: Dissonance
+Command: Protect
+Command: Shockwave
+Volcanic Rupture
+Bellows Breath
+Searing Charge
+Call of the Forge God
+Comet Spear
+Shield Vault
+Aegis Assault
+Grand Starfall
+Hammer Shock
+Steadfast Presence
+Heroic Charge
+Keeper's Verdict
+Bone Skewer
+Ghostwater Dive
+Phantom Undertow
+Death From Below
+Edge of Ixtal
+Terrashatter
+Audacity
+Supreme Display of Talent
+Blinding Assault
+Heightened Senses
+Vault
+Behind Enemy Lines
+Gleaming Quill
+Grand Entrance
+Battle Dance
+The Quickness
+Powerball
+Defensive Ball Curl
+Frenzying Taunt
+Tremors
+Queen's Wrath
+Burrow
+Furious Bite
+Void Rush
+Shattering Strike
+Ferromancy: Crash Down
+Attract and Repel
+Magnet Storm
+Handshake
+Bailout
+Loyalty Program
+Hostile Takeover
+Cull the Meek
+Ruthless Predator
+Slice and Dice
+Dominus
+Savagery
+Battle Roar
+Bola Strike
+Thrill of the Hunt
+Broken Wings
+Ki Burst
+Valor
+Blade of the Exile
+Flamespitter
+Scrap Shield
+Electro Harpoon
+The Equalizer
+Overload
+Rune Prison
+Spell Flux
+Realm Warp
+Flair
+Blade Whirl
+Wild Rush
+Inferno Trigger
+Arctic Assault
+Winter's Wrath
+Permafrost
+Glacial Prison
+Piercing Darkness
+Last Embrace
+Curse of the Black Mist
+Dawning Shadow
+High Note
+Surround Sound
+Beat Drop
+Encore
+Knuckle Down
+Haymaker
+Facebreaker
+The Show Stopper
+Deceive
+Jack in the Box
+Two-Shiv Poison
+Hallucinate
+Twilight Assault
+Spirit's Refuge
+Shadow Dash
+Stand United
+Twin Bite
+Burnout
+Flame Breath
+Dragon's Descent
+Poison Trail
+Mega Adhesive
+Fling
+Insanity Potion
+Decimating Smash
+Soul Furnace
+Roar of the Slayer
+Unstoppable Onslaught
+Boomerang Blade
+Ricochet
+Spell Shield
+On the Hunt
+Crystal Slash
+Crystalline Exoskeleton
+Fracture
+Impale
+Hymn of Valor
+Aria of Perseverance
+Song of Celerity
+Crescendo
+Starcall
+Astral Infusion
+Equinox
+Wish
+Death's Hand
+Vision of Empire
+Nevermove
+Demonic Ascension
+Chain Lash
+Kingslayer
+Abscond
+Hijack
+Dark Sphere
+Force of Will
+Scatter the Weak
+Unleashed Power
+Tongue Lash
+Devour
+Thick Skin
+Abyssal Voyage
+Threaded Volley
+Seismic Shove
+Unraveled Earth
+Weaver's Wall
+Noxian Diplomacy
+Rake
+Assassin's Path
+Shadow Assault
+Starlight's Touch
+Bastion
+Dazzle
+Cosmic Radiance
+Blinding Dart
+Move Quick
+Toxic Shot
+Noxious Trap
+Death Sentence
+Dark Passage
+Flay
+The Box
+Rapid Fire
+Rocket Jump
+Explosive Charge
+Buster Shot
+Chomp
+Frozen Domain
+Pillar of Ice
+Subjugate
+Bloodlust
+Mocking Shout
+Spinning Slash
+Undying Rage
+Wild Cards
+Pick a Card
+Stacked Deck
+Destiny
+Ambush
+Venom Cask
+Contaminate
+Spray and Pray
+Tiger Stance
+Turtle Stance
+Bear Stance
+Phoenix Stance
+Corrosive Charge
+Purge
+Disdain
+Fear Beyond Death
+Piercing Arrow
+Blighted Quiver
+Hail of Arrows
+Chain of Corruption
+Tumble
+Silver Bolts
+Condemn
+Final Hour
+Baleful Strike
+Dark Matter
+Event Horizon
+Primordial Burst
+Plasma Fission
+Void Rift
+Tectonic Disruption
+Lifeform Disintegration Ray
+Mistral Bolt
+Personal Space
+Looming Darkness
+Shadow Surge
+Vault Breaker
+Denting Blows
+Excessive Force
+Assault and Battery
+Vault Breaker
+Denting Blows
+Excessive Force
+Assault and Battery
+Blade of the Ruined King
+Spectral Maw
+Harrowed Path
+Heartbreaker
+Siphon Power
+Gravity Field
+Death Ray
+Chaos Storm
+Transfusion
+Sanguine Pool
+Tides of Blood
+Hemoplague
+Thundering Smash
+Frenzied Maul
+Sky Splitter
+Stormbringer
+Jaws of the Beast
+Blood Hunt
+Primal Howl
+Infinite Duress
+Crushing Blow
+Warrior Trickster
+Nimbus Strike
+Cyclone
+Double Daggers
+Deadly Plumage
+Bladecaller
+Featherstorm
+Crushing Blow
+Warrior Trickster
+Nimbus Strike
+Cyclone
+Three Talon Strike
+Wind Becomes Lightning
+Audacious Charge
+Crescent Guard
+Steel Tempest
+Wind Wall
+Sweeping Blade
+Last Breath
+Mortal Steel
+Spirit Cleave
+Soul Unbound
+Fate Sealed
+Last Rites
+Dark Procession
+Mourning Mist
+Eulogy of the Isles
+Prowling Projectile
+You and Me!
+Zoomies
+Final Chapter
+Stretching Strikes
+Unstable Matter
+Elastic Slingshot
+Let's Bounce!
+Razor Shuriken
+Living Shadow
+Shadow Slash
+Death Mark
+Burst Fire
+Ultrashock Laser
+Spark Surge
+Lightning Crash
+Bouncing Bomb
+Satchel Charge
+Hexplosive Minefield
+Mega Inferno Bomb
+Time Bomb
+Rewind
+Time Warp
+Chronoshift
+Paddle Star
+Spell Thief
+Sleepy Trouble Bubble
+Portal Jump
+Deadly Spines
+Rampant Growth
+Grasping Roots
+Stranglethorns
+
+
+	
