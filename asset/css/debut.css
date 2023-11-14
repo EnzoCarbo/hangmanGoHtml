@@ -1,0 +1,89 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    font-family: 'Friz Quadrata Std', sans-serif;                                             
+    background: url(/static/image/WallpaperDark.20d3d6f6\ \(1\).jpg) no-repeat 50% fixed;
+    background-size: cover;
+    background-color: #000;
+    width: 98vw;
+    height: 97vh;
+    color: #d9d9d9;
+    margin: 8px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.upper-text {
+    display: flex;
+    justify-content: center;
+    max-width: 60%;
+    border: solid yellow 2px;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    padding: 10px 20px; 
+}
+
+.level-container {
+    display: flex;
+    padding-top: 7%;
+}
+
+ul {list-style: none; 
+    counter-reset: li
+}
+
+li::before {content: "•"; 
+    color: yellow;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em}
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.level1, .level2, .level3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 20%;
+    min-height: 30%;
+    border: solid yellow 2px;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    padding: 10px 20px;
+    width: 50%;
+    margin-top: 6%;
+    margin: 10px 20px;
+}
+h2 {
+    text-decoration: underline;
+}
+a {
+    font-size: inherit;
+    cursor: pointer;
+    padding: 18px 80px;
+    display: inline-block;
+    margin: 15px 0px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+	border-radius: 50px;
+    color: #fff;
+    overflow: hidden;
+	background: #25221e
+}
+.button {
+    display: flex;
+    justify-content: center;
+}
