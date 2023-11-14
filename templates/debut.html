@@ -8,47 +8,63 @@
         <link rel="stylesheet" href="/static/css/debut.css">
     </head>
     <body>
-        <div class="main-container">
-            <h1>Choisissez votre Niveau !</h1>
-            <div class="upper-text">
-                La règle est simple : trouvez le mot pour gagner la partie        
-            </div>
-            <div class="level-container">
-                <div class="level1">
-                    <h2>Level 1</h2>
-                    <ul>
-                        <li>Only League of Legends characters</li>
-                        <li>Short words</li>
-                        <li>No malus</li>
-                    </ul>
-                    <div class="button">
-                        <a href="http://localhost:8080/level1">Jouer</a>
+        <div class="pseudo">
+            <h1>Entrez votre pseudo :</h1>
+            <form id="pseudoForm">
+                <label for="pseudo">Pseudo :</label>
+                <input type="text" id="pseudo" name="pseudo" required>
+                <button type="button" onclick="AfficherNiveaux()">Valider</button>
+            </form>
+        </div> 
+            <div class="main-container" id="js">
+                <h1>Choisissez votre Niveau !</h1>
+                <div class="upper-text">
+                    La règle est simple : trouvez le mot pour gagner la partie        
+                </div>
+                <div class="level-container">
+                    <div class="level1">
+                        <h2>Level 1</h2>
+                        <ul>
+                            <li>Only League of Legends characters</li>
+                            <li>Short words</li>
+                            <li>No malus</li>
+                        </ul>
+                        <div class="button">
+                            <a href="http://localhost:8080/level1">Jouer</a>
+                        </div>
+                    </div>
+                    <div class="level2">
+                        <h2>Level 2</h2>
+                        <ul>
+                            <li>Only League of Legends items</li>
+                            <li>Medium words</li>
+                            <li>No malus</li>
+                        </ul>
+                        <div class="button">
+                            <a href="http://localhost:8080/level2">Jouer</a>
+                        </div>
+                    </div>
+                    <div class="level3">
+                        <h2>Level 3</h2>
+                        <ul>
+                            <li>Only League of Legends characters spells</li>
+                            <li>Hard words</li>
+                            <li>No malus</li>
+                        </ul>
+                        <div class="button">
+                            <a href="http://localhost:8080/level3">Souffrir</a>
+                        </div>
                     </div>
                 </div>
-                <div class="level2">
-                    <h2>Level 2</h2>
-                    <ul>
-                        <li>Only League of Legends items</li>
-                        <li>Medium words</li>
-                        <li>No malus</li>
-                    </ul>
-                    <div class="button">
-                        <a href="http://localhost:8080/level2">Jouer</a>
-                    </div>
-                </div>
-                <div class="level3">
-                    <h2>Level 3</h2>
-                    <ul>
-                        <li>Only League of Legends characters spells</li>
-                        <li>Hard words</li>
-                        <li>No malus</li>
-                    </ul>
-                    <div class="button">
-                        <a href="http://localhost:8080/level3">Souffrir</a>
-                    </div>
-                </div>
-            </div>
-        </div>  
+        </div>
+        <script>
+            function AfficherNiveaux() {
+              var buttonContainer = document.getElementById("js");
+              buttonContainer.style.display = "block";
+              var pseudoContainer = document.querySelector(".pseudo");
+              pseudoContainer.style.display = "none";
+            }
+          </script>  
     </body>     
 </html>
 {{end}}

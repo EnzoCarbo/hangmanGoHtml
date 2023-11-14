@@ -12,6 +12,10 @@ body {
     margin: 8px;
 }
 
+#js{
+    display: none;
+}
+
 .main-container {
     display: flex;
     flex-direction: column;
