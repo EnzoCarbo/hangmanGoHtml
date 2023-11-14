@@ -20,26 +20,25 @@ eclipse
 edge of night
 essence reaver
 everfrost
-evershroud
+evenshroud
 force of nature
 frozen heart
 galeforce
-gargoyle
+gargoyle stoneplate
 golden spatula
 goredrinker
 guardian angel
 guinsoo
 heartsteel
-hextech rockbelt
+hextech rocketbelt
 horizon focus
 hullbreaker
 iceborn gauntlet
-immo shieldbow
+immortal shieldbow
 imperial mandate
 infinity edge
-iron solari
 jak sho
-knight vow
+knights vow
 kraken
 liandry
 lich bane
@@ -52,30 +51,31 @@ mikael
 moonstone renewer
 morellomicon
 mortal reminder
-nashor tooth
-navori
+nashors tooth
+navori quickblades
 night harvester
 phantom dancer
-porosnax
-rabadon
-randuin omen
-rapidfirecannon
+poro snax
+rabadons deathcap
+randuins omen
+rapid firecannon
 ravenous hydra
 redemption
 riftmaker
 rod of ages
-runaan
-rylai
-serpent fang
-serylda
+runaans hurricane
+rylais crystal scepter
+serpents fang
+seryldas grudge
 shadowflame
-shurelya
+shurelyas battlesong
 silvermere dawn
 spear of shojin
 spirit visage
-staff flowing water
-statikk 
-sterak
+locket of the iron solari
+staff of flowing waters
+statikk shiv
+steraks gage
 stormrazor
 stridebreaker
 sunfire aegis
@@ -86,8 +86,7 @@ turbo chemtank
 umbral glaive
 void staff
 warmog armor
-winter approach
 wits end
-youmuu
-zeke
-zhonya
+youmuus ghostblade
+zekes convergence
+zhonyas hourglass
