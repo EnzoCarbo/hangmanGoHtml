@@ -1,92 +1,92 @@
-abyssal mask
-archangel staff
-ardent censer
-axiom arc
-black cleaver
-bloodthirster
-botrk
-chempunk chainsword 
-chemtech putrifier
-collector
-cosmic drive
-crown shattered queen
-dead man plate
-death dance
-demonic embrace
-divine sunderer
-dominik
-draktharr
-eclipse
-edge of night
-essence reaver
-everfrost
-evenshroud
-force of nature
-frozen heart
-galeforce
-gargoyle stoneplate
-golden spatula
-goredrinker
-guardian angel
-guinsoo
-heartsteel
-hextech rocketbelt
-horizon focus
-hullbreaker
-iceborn gauntlet
-immortal shieldbow
-imperial mandate
-infinity edge
-jak sho
-knights vow
-kraken
-liandry
-lich bane
-luden
-malmortius
-manamune
-mejai
-mercurial scimitar
-mikael
-moonstone renewer
-morellomicon
-mortal reminder
-nashors tooth
-navori quickblades
-night harvester
-phantom dancer
-poro snax
-rabadons deathcap
-randuins omen
-rapid firecannon
-ravenous hydra
-redemption
-riftmaker
-rod of ages
-runaans hurricane
-rylais crystal scepter
-serpents fang
-seryldas grudge
-shadowflame
-shurelyas battlesong
-silvermere dawn
-spear of shojin
-spirit visage
-locket of the iron solari
-staff of flowing waters
-statikk shiv
-steraks gage
-stormrazor
-stridebreaker
-sunfire aegis
-thornmail
-titanic hydra
-trinity force
-turbo chemtank
-umbral glaive
-void staff
-warmog armor
-wits end
-youmuus ghostblade
-zekes convergence
-zhonyas hourglass
+Abyssal Mask
+Archangel Staff
+Ardent Censer
+Axiom Arc
+Black Cleaver
+Bloodthirster
+Botrk
+Chempunk Chainsword 
+Chemtech Putrifier
+Collector
+Cosmic Drive
+Crown Shattered Queen
+Dead Man Plate
+Death Dance
+Demonic Embrace
+Divine Sunderer
+Dominik
+Draktharr
+Eclipse
+Edge Of Night
+Essence Reaver
+Everfrost
+Evenshroud
+Force Of Nature
+Frozen Heart
+Galeforce
+Gargoyle Stoneplate
+Golden Spatula
+Goredrinker
+Guardian Angel
+Guinsoo
+Heartsteel
+Hextech Rocketbelt
+Horizon Focus
+Hullbreaker
+Iceborn Gauntlet
+Immortal Shieldbow
+Imperial Mandate
+Infinity Edge
+Jak Sho
+Knights Vow
+Kraken
+Liandry
+Lich Bane
+Luden
+Malmortius
+Manamune
+Mejai
+Mercurial Scimitar
+Mikael
+Moonstone Renewer
+Morellomicon
+Mortal Reminder
+Nashors Tooth
+Navori Quickblades
+Night Harvester
+Phantom Dancer
+Poro Snax
+Rabadons Deathcap
+Randuins Omen
+Rapid Firecannon
+Ravenous Hydra
+Redemption
+Riftmaker
+Rod Of Ages
+Runaans Hurricane
+Rylais Crystal Scepter
+Serpents Fang
+Seryldas Grudge
+Shadowflame
+Shurelyas Battlesong
+Silvermere Dawn
+Spear Of Shojin
+Spirit Visage
+Locket Of The Iron Solari
+Staff Of Flowing Waters
+Statikk Shiv
+Steraks Gage
+Stormrazor
+Stridebreaker
+Sunfire Aegis
+Thornmail
+Titanic Hydra
+Trinity Force
+Turbo Chemtank
+Umbral Glaive
+Void Staff
+Warmog Armor
+Wits End
+Youmuus Ghostblade
+Zekes Convergence
+Zhonyas Hourglass
