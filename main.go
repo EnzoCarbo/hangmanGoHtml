@@ -45,6 +45,18 @@ func main() {
 		temp.ExecuteTemplate(w, "facile", logs)
 	})
 
+	http.HandleFunc("/level1", func(w http.ResponseWriter, r *http.Request) {
+		temp.ExecuteTemplate(w, "level1", nil)
+	})
+
+	http.HandleFunc("/level2", func(w http.ResponseWriter, r *http.Request) {
+		temp.ExecuteTemplate(w, "level2", nil)
+	})
+
+	http.HandleFunc("/level3", func(w http.ResponseWriter, r *http.Request) {
+		temp.ExecuteTemplate(w, "level3", nil)
+	})
+
 	rootDoc, _ := os.Getwd()
 	fileserver := http.FileServer(http.Dir(rootDoc + "/asset"))
 	http.Handle("/static/", http.StripPrefix("/static/", fileserver))
