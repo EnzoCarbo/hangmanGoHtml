@@ -35,6 +35,9 @@ func main() {
 			r.FormValue("pseudo")}
 		fmt.Println(logs)
 		http.Redirect(w, r, "/debut", http.StatusMovedPermanently)
+		http.Redirect(w, r, "/level1", http.StatusMovedPermanently)
+		http.Redirect(w, r, "/level2", http.StatusMovedPermanently)
+		http.Redirect(w, r, "/level3", http.StatusMovedPermanently)
 	})
 
 	http.HandleFunc("/debut", func(w http.ResponseWriter, r *http.Request) {
