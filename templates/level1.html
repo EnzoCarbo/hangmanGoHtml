@@ -1,15 +1,19 @@
-{{define "facile"}}
+{{define "easy"}}
 <!DOCTYPE html>
 <html lang="fr">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>level1</title>
+        <title> Level 1</title>
         <link href="https://fonts.cdnfonts.com/css/friz-quadrata-std" rel="stylesheet">
         <link rel="stylesheet" href="/static/css/level1.css">
     </head>
+    <header>
+        <div class="info">
+        Username : {{.Username}}
+    </div>
+    </header>
     <body>
-       {{.Username}}
     </body>     
 </html>
 {{end}}

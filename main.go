@@ -45,15 +45,15 @@ func main() {
 	})
 
 	http.HandleFunc("/level1", func(w http.ResponseWriter, r *http.Request) {
-		temp.ExecuteTemplate(w, "facile", logs)
+		temp.ExecuteTemplate(w, "easy", logs)
 	})
 
 	http.HandleFunc("/level2", func(w http.ResponseWriter, r *http.Request) {
-		temp.ExecuteTemplate(w, "level2", nil)
+		temp.ExecuteTemplate(w, "medium", nil)
 	})
 
 	http.HandleFunc("/level3", func(w http.ResponseWriter, r *http.Request) {
-		temp.ExecuteTemplate(w, "level3", nil)
+		temp.ExecuteTemplate(w, "hard", nil)
 	})
 
 	rootDoc, _ := os.Getwd()
