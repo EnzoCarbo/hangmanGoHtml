@@ -1,0 +1,21 @@
+{{define "username"}}
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Début</title>
+        <link rel="stylesheet" href="/static/css/username.css">
+    </head>
+    <body>
+         <div class="upper-text">
+             <h1>Entrez votre pseudo :</h1>
+            <form action="/treatment" id="pseudoForm" method="post">
+                <label for="pseudo">Pseudo :</label>
+                <input type="text" id="pseudo" name="pseudo" required>
+                <button type="submit">Valider</button>
+            </form>           
+        </div>         
+    </body>     
+</html>
+{{end}}

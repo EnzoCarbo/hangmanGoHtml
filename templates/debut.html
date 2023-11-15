@@ -7,20 +7,15 @@
         <title>Début</title>
         <link rel="stylesheet" href="/static/css/debut.css">
     </head>
-    <body>
-        <div class="pseudo">
-            <h1>Entrez votre pseudo :</h1>
-            <form id="pseudoForm">
-                <label for="pseudo">Pseudo :</label>
-                <input type="text" id="pseudo" name="pseudo" required>
-                <button type="button" onclick="AfficherNiveaux()">Valider</button>
-            </form>
-        </div> 
-        <div id="js">
-            <div class="main-container">
-                <h1>Choisissez votre Niveau !</h1>
-                <div class="upper-text">
-                    La règle est simple : trouvez le mot pour gagner la partie        
+    <header>
+        <div class="info">
+        Username :{{.Username}}
+    </div>
+    </header>
+    <body>     
+        <div class="main-container">
+            <h1>Choisissez votre Niveau !</h1>
+            <div class="upper-text">                    La règle est simple : trouvez le mot pour gagner la partie        
                 </div>
                 <div class="level-container">
                     <div class="level1">
@@ -57,23 +52,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <script>
-            function AfficherNiveaux() {
-                var pseudoValue = document.getElementById('pseudo').value;
-                if (pseudoValue.trim() === "") {
-        alert("Veuillez saisir un pseudo avant de valider.");
-        return;
-    }
-              var buttonContainer = document.getElementById("js");
-                buttonContainer.style.display = "block";
-              var pseudoContainer = document.querySelector(".pseudo");
-                pseudoContainer.style.display = "none";
-}
-document.getElementById('validerButton').addEventListener('click', handleValidation);
-
-          </script>  
+            </div>  
     </body>     
 </html>
 {{end}}

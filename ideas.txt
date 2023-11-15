@@ -1,0 +1,15 @@
+Intro : page d'accueil, description 
+
+debut: Choix de BLAZEuh + choix difficultée ? 
+
+Niveau 1 : persos
+
+Niveau 2 : items
+
+Niveau 3 : spells
+
+score : 
+
+
+
+

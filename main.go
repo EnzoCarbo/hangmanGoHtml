@@ -7,6 +7,12 @@ import (
 	"os"
 )
 
+type PageInit struct {
+	Username string
+}
+
+var logs PageInit
+
 func main() {
 
 	temp, err := template.ParseGlob("./templates/*.html")
@@ -19,8 +25,24 @@ func main() {
 		temp.ExecuteTemplate(w, "intro", nil)
 	})
 
+	http.HandleFunc("/username", func(w http.ResponseWriter, r *http.Request) {
+		temp.ExecuteTemplate(w, "username", nil)
+
+	})
+
+	http.HandleFunc("/treatment", func(w http.ResponseWriter, r *http.Request) {
+		logs = PageInit{
+			r.FormValue("pseudo")}
+		fmt.Println(logs)
+		http.Redirect(w, r, "/debut", http.StatusMovedPermanently)
+	})
+
 	http.HandleFunc("/debut", func(w http.ResponseWriter, r *http.Request) {
-		temp.ExecuteTemplate(w, "debut", nil)
+		temp.ExecuteTemplate(w, "debut", logs)
+	})
+
+	http.HandleFunc("/level1", func(w http.ResponseWriter, r *http.Request) {
+		temp.ExecuteTemplate(w, "facile", logs)
 	})
 
 	rootDoc, _ := os.Getwd()

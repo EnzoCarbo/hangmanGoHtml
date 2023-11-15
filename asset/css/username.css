@@ -1,0 +1,36 @@
+body {    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Friz Quadrata Std', sans-serif;                                             
+    background: url(/static/image/WallpaperDark.20d3d6f6\ \(1\).jpg) no-repeat 50% fixed;
+    background-size: cover;
+    background-color: #000;
+    width: 98vw;
+    height: 97vh;
+    color: #d9d9d9;
+    margin: 8px;
+}
+
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.upper-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 60%;
+    border: solid yellow 2px;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    padding: 10px 20px; 
+}
+
+h1 {
+    margin-top: 1%;
+}
