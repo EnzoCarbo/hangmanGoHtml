@@ -61,11 +61,18 @@
         </div>
         <script>
             function AfficherNiveaux() {
+                var pseudoValue = document.getElementById('pseudo').value;
+                if (pseudoValue.trim() === "") {
+        alert("Veuillez saisir un pseudo avant de valider.");
+        return;
+    }
               var buttonContainer = document.getElementById("js");
-              buttonContainer.style.display = "block";
+                buttonContainer.style.display = "block";
               var pseudoContainer = document.querySelector(".pseudo");
-              pseudoContainer.style.display = "none";
-            }
+                pseudoContainer.style.display = "none";
+}
+document.getElementById('validerButton').addEventListener('click', handleValidation);
+
           </script>  
     </body>     
 </html>
