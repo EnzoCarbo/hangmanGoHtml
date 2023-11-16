@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"hangmanweb/hangman"
 	"html/template"
 	"net/http"
 	"os"
@@ -14,7 +15,7 @@ type PageInit struct {
 var logs PageInit
 
 func main() {
-
+	hangman.New()
 	temp, err := template.ParseGlob("./templates/*.html")
 	if err != nil {
 		fmt.Printf(fmt.Sprintf("ERREUR => %s", err.Error()))
