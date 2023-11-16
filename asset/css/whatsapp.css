@@ -1,0 +1,13 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    font-family: 'Friz Quadrata Std', sans-serif;                                             
+    background: url(/static/image/malphite.jpg) no-repeat 50% fixed;
+    background-size: cover;
+    background-color: #000;
+    width: 98vw;
+    height: 97vh;
+    color: #d9d9d9;
+    margin: 8px;
+}
