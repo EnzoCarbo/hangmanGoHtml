@@ -1,5 +1,6 @@
 body {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;    
     font-family: 'Friz Quadrata Std', sans-serif;                                             
@@ -10,4 +11,24 @@ body {
     height: 97vh;
     color: #d9d9d9;
     margin: 8px;
+}
+
+a {
+    font-size: inherit;
+    cursor: pointer;
+    padding: 18px 80px;
+    display: inline-block;
+    margin: 15px 0px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+	border-radius: 50px;
+    color: #fff;
+    overflow: hidden;
+	background: #25221e
 }
