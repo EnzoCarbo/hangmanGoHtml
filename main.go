@@ -25,6 +25,10 @@ func main() {
 		temp.ExecuteTemplate(w, "intro", nil)
 	})
 
+	http.HandleFunc("/whatsapp", func(w http.ResponseWriter, r *http.Request) {
+		temp.ExecuteTemplate(w, "whatsapp", nil)
+	})
+
 	http.HandleFunc("/username", func(w http.ResponseWriter, r *http.Request) {
 		temp.ExecuteTemplate(w, "username", nil)
 
