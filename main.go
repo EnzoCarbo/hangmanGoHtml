@@ -12,10 +12,18 @@ type PageInit struct {
 	Username string
 }
 
+type Game struct {
+	State        string
+	Letters      []string
+	FoundLetters []string
+	UsedLetters  []string
+	TurnsLeft    int
+}
+
 var logs PageInit
 
 func main() {
-	hangman.New()
+
 	temp, err := template.ParseGlob("./templates/*.html")
 	if err != nil {
 		fmt.Printf(fmt.Sprintf("ERREUR => %s", err.Error()))
@@ -39,6 +47,7 @@ func main() {
 		logs = PageInit{
 			r.FormValue("pseudo")}
 		fmt.Println(logs)
+
 		http.Redirect(w, r, "/debut", http.StatusMovedPermanently)
 		http.Redirect(w, r, "/level1", http.StatusMovedPermanently)
 		http.Redirect(w, r, "/level2", http.StatusMovedPermanently)
@@ -50,6 +59,7 @@ func main() {
 	})
 
 	http.HandleFunc("/level1", func(w http.ResponseWriter, r *http.Request) {
+		hangman.HangmanInit()
 		temp.ExecuteTemplate(w, "easy", logs)
 	})
 

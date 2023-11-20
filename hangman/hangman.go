@@ -93,3 +93,7 @@ func letterInWord(guess string, letters []string) bool {
 	}
 	return false
 }
+
+func HangmanInit() {
+	New(10, "word")
+}
