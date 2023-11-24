@@ -8,20 +8,31 @@
         <link href="https://fonts.cdnfonts.com/css/friz-quadrata-std" rel="stylesheet">
         <link rel="stylesheet" href="/static/css/level1.css">
     </head>
-    <header>
-        <div class="info">
-            <p>{{.Hiddenword}}</p>
-            <p>{{.Listletter}}</p>
-            <p>{{.Leftpv}}</p>
-            <p>{{.MesUser}}</p>
-        </div>
-    </header>
     <body>
-        <h1>Page game</h1>
-        <form action="/game/treatment" method="post">
-            <input type="text" name="value" placeholder="indiquer une letter" required>
-            <button>Valider</button>
-        </form>
+        <div class="main-container">
+            <h1>Page game</h1>
+            <div class="info">
+                <div class="guess-word">
+                {{range .Hiddenword}}
+                {{.}}
+                {{end}}
+            </div>
+            <div class="display-letters">
+                Lettres utilisées : {{range .Listletter}}
+                {{.}}
+                {{end}}
+            </div>
+                <p>Vies restantes : {{.Leftpv}}</p>
+                <div class="state">
+                    <p>{{.MesUser}}</p>   
+                </div> 
+            <form action="/game/treatment" method="post">
+                <input type="text" name="value" placeholder="Indiquez une lettre" required>
+                <button>Valider</button>
+            </form>
+        <div class="image">
+            <img src="/static/image/level1/yuumi{{.Leftpv}}.png" alt="">
+        </div>
     </body>     
 </html>
 {{end}}

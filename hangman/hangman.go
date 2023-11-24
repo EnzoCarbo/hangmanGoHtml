@@ -10,12 +10,12 @@ import (
 )
 
 type Game struct {
-	State        bool
 	Letters      []string // nul
 	FoundLetters []string
 	UsedLetters  []string
 	Word         string
 	TurnsLeft    int
+	IsGame       bool
 }
 
 var Player Game
@@ -32,7 +32,7 @@ func New(turns int, word string) (*Game, error) {
 	}
 
 	g := &Game{
-		State:        true,
+		IsGame:       true,
 		Letters:      letters,
 		FoundLetters: found,
 		UsedLetters:  []string{},
@@ -146,7 +146,7 @@ func Start(level string) {
 		os.Exit(1)
 	}
 
-	g, err := New(11, PickWord())
+	g, err := New(10, PickWord())
 	if err != nil {
 		fmt.Printf("Could not create game: %v\n", err)
 		os.Exit(1)
@@ -162,16 +162,16 @@ func (g *Game) CheckInput(value string) string {
 			for index := range g.Word {
 				g.FoundLetters[index] = string(g.Word[index])
 			}
-			return "vous avez trouver le mot"
+			return "Vous avez trouvé le mot"
 		} else {
 			g.TurnsLeft -= 2
-			return "vous avez perdu deux vies"
+			return "Vous avez perdu deux vies"
 		}
 	} else {
 
 		for _, letter := range g.UsedLetters {
 			if letter == value {
-				return "vous avez deja indiquer cette lettre"
+				return "Vous avez deja indiqué cette lettre"
 			}
 		}
 		g.UsedLetters = append(g.UsedLetters, value)
@@ -184,8 +184,8 @@ func (g *Game) CheckInput(value string) string {
 		}
 		if !IsFind {
 			g.TurnsLeft -= 1
-			return "vous avez perdu une vie"
+			return "Vous avez perdu une vie"
 		}
-		return "vous avez trouver la lettre"
+		return "Vous avez trouvé la lettre"
 	}
 }
