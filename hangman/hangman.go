@@ -25,7 +25,7 @@ func New(turns int, word string) (*Game, error) {
 		return nil, fmt.Errorf("Le mot '%s' doit faire minimum 2 charactères . got=%v", word, len(word))
 	}
 
-	letters := strings.Split(strings.ToUpper(word), "")
+	letters := strings.Split(strings.ToLower(word), "")
 	found := make([]string, len(letters))
 	for i := 0; i < len(letters); i++ {
 		found[i] = "_"
@@ -37,19 +37,23 @@ func New(turns int, word string) (*Game, error) {
 		FoundLetters: found,
 		UsedLetters:  []string{},
 		TurnsLeft:    turns,
-		Word:         word,
+		Word:         strings.ToLower(word),
 	}
 
 	return g, nil
 }
 
 func HasWon(hiddenWord []string, word string) bool {
-	for i := range hiddenWord {
-		if string(hiddenWord[i]) != string(word[i]) {
-			return false
+	if len(hiddenWord) == len(word) {
+		for i := range hiddenWord {
+			if string(hiddenWord[i]) != string(word[i]) {
+				return false
+			}
 		}
+		return true
+	} else {
+		return false
 	}
-	return true
 }
 
 func (g *Game) RevealLetter(guess string) {
@@ -76,6 +80,19 @@ func LetterInWord(guess string, letters []string) bool {
 }
 
 var words = make([]string, 0, 50)
+
+func PrepareFileName(level string) string {
+	switch level {
+	case "1":
+		return "champions.txt"
+	case "2":
+		return "items.txt"
+	case "3":
+		return "spells.txt"
+	default:
+		return "champions.txt"
+	}
+}
 
 func Load(filename string) error { //charge le .txt avec les noms de champions
 	f, err := os.Open(filename)
@@ -122,9 +139,8 @@ func ReadGuess() (guess string, err error) {
 	return
 }
 
-func Start() {
-
-	err := Load("champions.txt")
+func Start(level string) {
+	err := Load(PrepareFileName(level))
 	if err != nil {
 		fmt.Printf("Could not load dictionary: %v\n", err)
 		os.Exit(1)
@@ -136,16 +152,29 @@ func Start() {
 		os.Exit(1)
 	}
 	Player = *g
+	fmt.Println("game init word : ", g.Word)
 }
 
-func (g *Game) CheckInput(value string) {
-
+func (g *Game) CheckInput(value string) string {
+	value = strings.ToLower(value)
 	if len(value) != 1 {
 		if g.Word == value {
+			for index := range g.Word {
+				g.FoundLetters[index] = string(g.Word[index])
+			}
+			return "vous avez trouver le mot"
 		} else {
-			g.TurnsLeft = -2
+			g.TurnsLeft -= 2
+			return "vous avez perdu deux vies"
 		}
 	} else {
+
+		for _, letter := range g.UsedLetters {
+			if letter == value {
+				return "vous avez deja indiquer cette lettre"
+			}
+		}
+		g.UsedLetters = append(g.UsedLetters, value)
 		IsFind := false
 		for i, v := range g.Word {
 			if value == string(v) {
@@ -153,9 +182,10 @@ func (g *Game) CheckInput(value string) {
 				g.FoundLetters[i] = string(v)
 			}
 		}
-		if !(IsFind) {
-			g.TurnsLeft = -1
+		if !IsFind {
+			g.TurnsLeft -= 1
+			return "vous avez perdu une vie"
 		}
-
+		return "vous avez trouver la lettre"
 	}
 }
