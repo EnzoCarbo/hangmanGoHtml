@@ -32,16 +32,26 @@ func main() {
 	}
 
 	http.HandleFunc("/intro", func(w http.ResponseWriter, r *http.Request) {
+		fmt.Println(hangman.Player.IsGame)
+		if hangman.Player.IsGame {
+			http.Redirect(w, r, "/game", 301)
+		}
 		temp.ExecuteTemplate(w, "intro", nil)
 	})
 
 	http.HandleFunc("/whatsapp", func(w http.ResponseWriter, r *http.Request) {
+		if hangman.Player.IsGame {
+			http.Redirect(w, r, "/game", 301)
+		}
 		temp.ExecuteTemplate(w, "whatsapp", nil)
 	})
 
 	http.HandleFunc("/init", func(w http.ResponseWriter, r *http.Request) {
+		fmt.Println("okokok", hangman.Player.IsGame)
+		if hangman.Player.IsGame {
+			http.Redirect(w, r, "/game", 301)
+		}
 		temp.ExecuteTemplate(w, "username", nil)
-
 	})
 
 	http.HandleFunc("/init/treatment", func(w http.ResponseWriter, r *http.Request) {
@@ -57,8 +67,14 @@ func main() {
 		MesUser    string
 	}
 	http.HandleFunc("/game", func(w http.ResponseWriter, r *http.Request) {
+		if !hangman.Player.IsGame {
+			http.Redirect(w, r, "/intro", 301)
+		}
 		data := PageGame{hangman.Player.FoundLetters, hangman.Player.UsedLetters, hangman.Player.TurnsLeft, MesUser}
-		if hangman.HasWon(hangman.Player.FoundLetters, hangman.Player.Word) || hangman.Player.TurnsLeft <= 0 {
+		test01 := hangman.HasWon(hangman.Player.FoundLetters, hangman.Player.Word)
+		fmt.Println(test01)
+		if test01 || hangman.Player.TurnsLeft <= 0 {
+			hangman.Player.IsGame = false
 			http.Redirect(w, r, "/end", 301)
 
 		}
@@ -72,6 +88,9 @@ func main() {
 	})
 
 	http.HandleFunc("/end", func(w http.ResponseWriter, r *http.Request) {
+		if hangman.Player.IsGame {
+			http.Redirect(w, r, "/game", 301)
+		}
 		w.Write([]byte("end"))
 	})
 
@@ -79,5 +98,5 @@ func main() {
 	fileserver := http.FileServer(http.Dir(rootDoc + "/asset"))
 	http.Handle("/static/", http.StripPrefix("/static/", fileserver))
 	//Init serv
-	http.ListenAndServe("localhost:8080", nil)
+	http.ListenAndServe("localhost:6969", nil)
 }
