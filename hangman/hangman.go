@@ -56,7 +56,7 @@ func HasWon(hiddenWord []string, word string) bool {
 	}
 }
 
-func (g *Game) RevealLetter(guess string) {
+/*func (g *Game) RevealLetter(guess string) {
 	g.UsedLetters = append(g.UsedLetters, guess)
 	for i, l := range g.Letters {
 		if l == guess {
@@ -77,7 +77,7 @@ func LetterInWord(guess string, letters []string) bool {
 		}
 	}
 	return false
-}
+} */
 
 var words = make([]string, 0, 50)
 
@@ -118,7 +118,7 @@ func PickWord() string { //prend un nom de champion aléatoire
 	return words[i]
 }
 
-var reader = bufio.NewReader(os.Stdin)
+/*var reader = bufio.NewReader(os.Stdin)
 
 func ReadGuess() (guess string, err error) {
 	valid := false
@@ -137,7 +137,7 @@ func ReadGuess() (guess string, err error) {
 		valid = true
 	}
 	return
-}
+} */
 
 func Start(level string) {
 	err := Load(PrepareFileName(level))
