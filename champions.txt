@@ -8,7 +8,6 @@ Anivia
 Annie
 Aphelios
 Ashe
-Aurelion Sol
 Azir
 Bard
 Blitzcrank
@@ -17,11 +16,10 @@ Braum
 Caitlyn
 Camille
 Cassiopeia
-Cho'Gath
 Corki
 Darius
 Diana
-Dr Mundo
+DrMundo
 Draven
 Ekko
 Elise
@@ -43,12 +41,10 @@ Illaoi
 Irelia
 Ivern
 Janna
-Jarvan IV
 Jax
 Jayce
 Jhin
 Jinx
-Kai'sa
 Kalista
 Karma
 Karthus
@@ -69,11 +65,9 @@ Lissandra
 Lucian
 Lulu
 Lux
-Maitre Yi
 Malphite
 Malzahar
 Maokai
-Miss Fortune
 Mordekaiser
 Morgana
 Nami
@@ -93,7 +87,6 @@ Qiyana
 Quinn
 Rakan
 Rammus
-Rek'sai
 Rell
 Renekton
 Rengar
@@ -117,7 +110,6 @@ Soraka
 Swain
 Sylas
 Syndra
-Tahm Kench
 Taliyah
 Talon
 Taric

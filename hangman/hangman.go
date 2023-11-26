@@ -16,7 +16,7 @@ type Game struct {
 	Word         string
 	TurnsLeft    int
 	IsGame       bool
-	HasWon       bool
+	IsWon        bool
 }
 
 var Player Game
@@ -33,13 +33,13 @@ func New(turns int, word string) (*Game, error) {
 	}
 
 	g := &Game{
+		IsWon:        false,
 		IsGame:       true,
 		Letters:      letters,
 		FoundLetters: found,
 		UsedLetters:  []string{},
 		TurnsLeft:    turns,
 		Word:         strings.ToLower(word),
-		HasWon:       true,
 	}
 
 	return g, nil
