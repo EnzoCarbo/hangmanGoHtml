@@ -2,7 +2,6 @@ Abyssal
 Archange
 Cleaver
 Bloodthirster 
-Chemtech Putrifier
 Collector
 Death Dance
 Divine
@@ -11,7 +10,6 @@ Draktharr
 Eclipse
 Everfrost
 Evenshroud
-Frozen Heart
 Galeforce
 Stoneplate
 Goredrinker
