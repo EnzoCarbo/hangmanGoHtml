@@ -53,10 +53,8 @@ Katarina
 Kayle
 Kayn
 Kennen
-Kha'zix
 Kindred
 Kled
-Kog'maw
 Leblanc
 Lee Sin
 Leona
@@ -118,14 +116,12 @@ Thresh
 Tristana
 Trundle
 Tryndamere
-Twisted Fate
 Twitch
 Udyr
 Urgot
 Varus
 Vayne
 Veigar
-Vel'koz
 Vex
 Vi
 Viego
