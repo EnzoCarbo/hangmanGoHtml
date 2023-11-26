@@ -86,10 +86,11 @@ func main() {
 	})
 
 	http.HandleFunc("/end", func(w http.ResponseWriter, r *http.Request) {
-		if hangman.Player.IsGame {
-			http.Redirect(w, r, "/game", 301)
-		}
-		w.Write([]byte("end"))
+		temp.ExecuteTemplate(w, "end", 301)
+	})
+
+	http.HandleFunc("/test", func(w http.ResponseWriter, r *http.Request) {
+		temp.ExecuteTemplate(w, "test", 301)
 	})
 
 	rootDoc, _ := os.Getwd()
