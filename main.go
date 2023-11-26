@@ -62,16 +62,19 @@ func main() {
 		Listletter []string
 		Leftpv     int
 		MesUser    string
+		IsWinner   bool
 	}
 
 	http.HandleFunc("/game", func(w http.ResponseWriter, r *http.Request) {
 
-		data := PageGame{hangman.Player.FoundLetters, hangman.Player.UsedLetters, hangman.Player.TurnsLeft, MesUser}
 		game := hangman.HasWon(hangman.Player.FoundLetters, hangman.Player.Word)
 		if game || hangman.Player.TurnsLeft <= 0 {
 			hangman.Player.IsGame = false
 			http.Redirect(w, r, "/end", 301)
 		}
+
+		data := PageGame{hangman.Player.FoundLetters, hangman.Player.UsedLetters, hangman.Player.TurnsLeft, MesUser, false}
+
 		temp.ExecuteTemplate(w, "easy", data)
 	})
 
@@ -82,10 +85,29 @@ func main() {
 	})
 
 	http.HandleFunc("/end", func(w http.ResponseWriter, r *http.Request) {
+		// Check if the game is won
+		HasWon := hangman.HasWon(hangman.Player.FoundLetters, hangman.Player.Word)
+		if HasWon {
+			hangman.Player.IsGame = false
+			data := PageGame{hangman.Player.FoundLetters, hangman.Player.UsedLetters, hangman.Player.TurnsLeft, MesUser, true}
+			temp.ExecuteTemplate(w, "end", data)
+			return // Add return statement to exit the function
+		}
+		if hangman.Player.TurnsLeft > 0 {
+			HasWon = hangman.HasWon(hangman.Player.FoundLetters, hangman.Player.Word)
+			if HasWon {
+				hangman.Player.IsGame = false
+				data := PageGame{hangman.Player.FoundLetters, hangman.Player.UsedLetters, hangman.Player.TurnsLeft, MesUser, true}
+				temp.ExecuteTemplate(w, "end", data)
+				return // Add return statement to exit the function
+			}
+		}
+
 		if hangman.Player.IsGame {
 			http.Redirect(w, r, "/game", 301)
 		}
-		w.Write([]byte("end"))
+
+		temp.ExecuteTemplate(w, "end", nil)
 	})
 
 	rootDoc, _ := os.Getwd()
