@@ -85,13 +85,12 @@ func main() {
 	})
 
 	http.HandleFunc("/end", func(w http.ResponseWriter, r *http.Request) {
-		// Check if the game is won
 		HasWon := hangman.HasWon(hangman.Player.FoundLetters, hangman.Player.Word)
 		if HasWon {
 			hangman.Player.IsGame = false
 			data := PageGame{hangman.Player.FoundLetters, hangman.Player.UsedLetters, hangman.Player.TurnsLeft, MesUser, true}
 			temp.ExecuteTemplate(w, "end", data)
-			return // Add return statement to exit the function
+			return
 		}
 		if hangman.Player.TurnsLeft > 0 {
 			HasWon = hangman.HasWon(hangman.Player.FoundLetters, hangman.Player.Word)
@@ -99,7 +98,7 @@ func main() {
 				hangman.Player.IsGame = false
 				data := PageGame{hangman.Player.FoundLetters, hangman.Player.UsedLetters, hangman.Player.TurnsLeft, MesUser, true}
 				temp.ExecuteTemplate(w, "end", data)
-				return // Add return statement to exit the function
+				return
 			}
 		}
 
