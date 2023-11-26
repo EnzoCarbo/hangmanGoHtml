@@ -63,16 +63,14 @@ func main() {
 		Leftpv     int
 		MesUser    string
 	}
+
 	http.HandleFunc("/game", func(w http.ResponseWriter, r *http.Request) {
-		if !hangman.Player.IsGame {
-			http.Redirect(w, r, "/intro", 301)
-		}
+
 		data := PageGame{hangman.Player.FoundLetters, hangman.Player.UsedLetters, hangman.Player.TurnsLeft, MesUser}
 		game := hangman.HasWon(hangman.Player.FoundLetters, hangman.Player.Word)
 		if game || hangman.Player.TurnsLeft <= 0 {
 			hangman.Player.IsGame = false
 			http.Redirect(w, r, "/end", 301)
-
 		}
 		temp.ExecuteTemplate(w, "easy", data)
 	})
