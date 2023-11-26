@@ -159,21 +159,11 @@ func Start(level string) {
 
 func (g *Game) CheckInput(value string) string {
 	value = strings.ToLower(value)
-	if len(value) != 1 {
-		if g.Word == value {
-			for index := range g.Word {
-				g.FoundLetters[index] = string(g.Word[index])
-			}
-			return "Vous avez trouvé le mot"
-		} else {
-			g.TurnsLeft -= 2
-			return "Vous avez perdu deux vies"
-		}
-	} else {
 
+	if len(value) == 1 && NoNum(value) {
 		for _, letter := range g.UsedLetters {
 			if letter == value {
-				return "Vous avez deja indiqué cette lettre"
+				return "Vous avez déjà indiqué cette lettre."
 			}
 		}
 		g.UsedLetters = append(g.UsedLetters, value)
@@ -186,8 +176,29 @@ func (g *Game) CheckInput(value string) string {
 		}
 		if !IsFind {
 			g.TurnsLeft -= 1
-			return "Vous avez perdu une vie"
+			return "Vous avez perdu une vie."
 		}
-		return "Vous avez trouvé la lettre"
+		return "Vous avez trouvé la lettre."
+	} else if len(value) > 1 && NoNum(value) {
+		if g.Word == value {
+			for index := range g.Word {
+				g.FoundLetters[index] = string(g.Word[index])
+			}
+			return "Vous avez trouvé le mot."
+		} else {
+			g.TurnsLeft -= 2
+			return "Vous avez perdu deux vies."
+		}
+	} else {
+		return "Veuillez entrer une lettre ou un mot valide."
 	}
+}
+
+func NoNum(s string) bool {
+	for _, char := range s {
+		if !('a' <= char && char <= 'z') {
+			return false
+		}
+	}
+	return true
 }

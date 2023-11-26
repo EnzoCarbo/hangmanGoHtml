@@ -66,14 +66,12 @@ func main() {
 	}
 
 	http.HandleFunc("/game", func(w http.ResponseWriter, r *http.Request) {
-
 		game := hangman.HasWon(hangman.Player.FoundLetters, hangman.Player.Word)
+		data := PageGame{hangman.Player.FoundLetters, hangman.Player.UsedLetters, hangman.Player.TurnsLeft, MesUser, false}
 		if game || hangman.Player.TurnsLeft <= 0 {
 			hangman.Player.IsGame = false
 			http.Redirect(w, r, "/end", 301)
 		}
-
-		data := PageGame{hangman.Player.FoundLetters, hangman.Player.UsedLetters, hangman.Player.TurnsLeft, MesUser, false}
 
 		temp.ExecuteTemplate(w, "easy", data)
 	})
@@ -86,18 +84,17 @@ func main() {
 
 	http.HandleFunc("/end", func(w http.ResponseWriter, r *http.Request) {
 		HasWon := hangman.HasWon(hangman.Player.FoundLetters, hangman.Player.Word)
+		datawin := PageGame{hangman.Player.FoundLetters, hangman.Player.UsedLetters, hangman.Player.TurnsLeft, MesUser, true}
 		if HasWon {
 			hangman.Player.IsGame = false
-			data := PageGame{hangman.Player.FoundLetters, hangman.Player.UsedLetters, hangman.Player.TurnsLeft, MesUser, true}
-			temp.ExecuteTemplate(w, "end", data)
+			temp.ExecuteTemplate(w, "end", datawin)
 			return
 		}
 		if hangman.Player.TurnsLeft > 0 {
 			HasWon = hangman.HasWon(hangman.Player.FoundLetters, hangman.Player.Word)
 			if HasWon {
 				hangman.Player.IsGame = false
-				data := PageGame{hangman.Player.FoundLetters, hangman.Player.UsedLetters, hangman.Player.TurnsLeft, MesUser, true}
-				temp.ExecuteTemplate(w, "end", data)
+				temp.ExecuteTemplate(w, "end", datawin)
 				return
 			}
 		}
