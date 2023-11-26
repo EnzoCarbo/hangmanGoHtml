@@ -10,7 +10,7 @@
     </head>
     <body>
         <div class="main-container">
-            <h1>Page game</h1>
+            <h1>A vous de jouer</h1>
             <div class="info">
                 <div class="guess-word">
                 {{range .Hiddenword}}
@@ -26,13 +26,14 @@
                 <div class="state">
                     <p>{{.MesUser}}</p>   
                 </div> 
-            <form action="/game/treatment" method="post">
-                <input type="text" name="value" placeholder="Indiquez une lettre" required>
-                <button>Valider</button>
-            </form>
+            
         <div class="image">
             <img src="/static/image/level1/yuumi{{.Leftpv}}.png" alt="">
         </div>
+        <form action="/game/treatment" method="post">
+            <input type="text" name="value" placeholder="Indiquez une lettre" required>
+            <button>Valider</button>
+        </form>
     </body>     
 </html>
 {{end}}

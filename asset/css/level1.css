@@ -14,6 +14,7 @@ body {
 }
 .guess-word {
     padding-bottom: 5%;
+    font-size: 50px
 }
 .display-letters {
     padding-bottom: 2%;
@@ -55,4 +56,44 @@ body {
 img {
     width: 35%;
     height: 100%;
+}
+
+button {
+    font-size: inherit;
+    cursor: pointer;
+    padding: 18px 80px;
+    display: inline-block;
+    margin: 15px 0px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+	border-radius: 50px;
+    color: #fff;
+    overflow: hidden;
+	background: #25221e
+}
+
+input {
+    font-size: inherit;
+    cursor: pointer;
+    padding: 18px 80px;
+    display: inline-block;
+    margin: 15px 0px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+	border-radius: 50px;
+    color: #fff;
+    overflow: hidden;
+	background: #25221e
 }

@@ -32,7 +32,6 @@ func main() {
 	}
 
 	http.HandleFunc("/intro", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Println(hangman.Player.IsGame)
 		if hangman.Player.IsGame {
 			http.Redirect(w, r, "/game", 301)
 		}
@@ -47,7 +46,6 @@ func main() {
 	})
 
 	http.HandleFunc("/init", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Println("okokok", hangman.Player.IsGame)
 		if hangman.Player.IsGame {
 			http.Redirect(w, r, "/game", 301)
 		}
@@ -56,7 +54,6 @@ func main() {
 
 	http.HandleFunc("/init/treatment", func(w http.ResponseWriter, r *http.Request) {
 		logs = PageInit{r.FormValue("pseudo"), r.FormValue("lvl")}
-		fmt.Println(logs)
 		hangman.Start(logs.lvl)
 		http.Redirect(w, r, "/game", 301)
 	})
@@ -71,9 +68,8 @@ func main() {
 			http.Redirect(w, r, "/intro", 301)
 		}
 		data := PageGame{hangman.Player.FoundLetters, hangman.Player.UsedLetters, hangman.Player.TurnsLeft, MesUser}
-		test01 := hangman.HasWon(hangman.Player.FoundLetters, hangman.Player.Word)
-		fmt.Println(test01)
-		if test01 || hangman.Player.TurnsLeft <= 0 {
+		game := hangman.HasWon(hangman.Player.FoundLetters, hangman.Player.Word)
+		if game || hangman.Player.TurnsLeft <= 0 {
 			hangman.Player.IsGame = false
 			http.Redirect(w, r, "/end", 301)
 
