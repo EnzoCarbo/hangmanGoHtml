@@ -8,11 +8,14 @@ body {
     height: 97vh;
     color: #d9d9d9;
     margin: 8px;
+    display: block;
 }
 
 h1 {
     display: flex;
     justify-content: center;
+    position: relative;
+      z-index: 1;
 }
 
 .poro {
