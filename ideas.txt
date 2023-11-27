@@ -1,6 +1,6 @@
 Intro : page d'accueil, description 
 
-debut: Choix de BLAZEuh + choix difficultée ? 
+debut: Choix de BLAZEuh + choix difficultï¿½e ? 
 
 Niveau 1 : persos
 
@@ -11,5 +11,19 @@ Niveau 3 : spells
 score : 
 
 
+var Path string
+var Turns int 
 
 
+verifier si lettre ou mot
+if letter : deja used ?
+si non = verifier si presente dans mot
+si presente = discover
+si non = enleve point
+
+si mot = verifier si correct
+si correct = victoire!!!!!!
+si non = rip bozo 
+
+
+veirfier si lettre entrÃ©e ou pas 

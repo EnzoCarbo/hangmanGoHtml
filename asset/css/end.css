@@ -1,7 +1,5 @@
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;    
+    cursor : url(/static/image/cursor.png) 10 14, pointer;
     font-family: 'Friz Quadrata Std', sans-serif;                                             
     background: url(/static/image/WallpaperDark.20d3d6f6\ \(1\).jpg) no-repeat 50% fixed;
     background-size: cover;
@@ -12,3 +10,44 @@ body {
     margin: 8px;
 }
 
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.poro {
+    display: flex;
+    justify-content: center;
+    margin: 6%;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+a#end {
+    font-size: inherit;
+    cursor: pointer;
+    padding: 7px 3px;
+    display: flex;
+	justify-content: center;
+	flex-direction: row;
+    margin: 15px 0px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-weight: 500;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+	border-radius: 50px;
+    color: #fff;
+    overflow: hidden;
+	background: #25221e;
+    width:130px;
+}

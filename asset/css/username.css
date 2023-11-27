@@ -1,4 +1,5 @@
 body {    
+    cursor : url(/static/image/cursor.png) 10 14, pointer;
     display: flex;
     flex-direction: column;
     align-items: center;

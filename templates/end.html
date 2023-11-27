@@ -4,17 +4,31 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Début</title>
+        <title>End</title>
         <link href="https://fonts.cdnfonts.com/css/friz-quadrata-std" rel="stylesheet">
         <link rel="stylesheet" href="/static/css/end.css">
     </head>
     <body>     
+
   {{if .IsWinner}}
-  aaaaaaa
+
+<h1>gg la team</h1>
 
   {{else}}
-  bbbbbbbb
+
+  <h1>Vous avez perdu!</h1>
+
+  <div class="poro">
+    <img src="/static/image/poro-twerk.gif" alt=""></a>
+</div>
+
   {{end}}
-    </body>     
+</body> 
+    <footer>
+    <div class="button">
+      <a id="end" href="http://localhost:6969/game">Recommencer</a>
+      <a id="end" href="http://localhost:6969/intro">Menu Principal</a>
+    </div>
+    </footer>        
 </html>
 {{end}}

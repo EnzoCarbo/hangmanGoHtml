@@ -1,4 +1,5 @@
 body {
+    cursor : url(/static/image/cursor.png) 10 14, pointer;
     font-family: 'Friz Quadrata Std', sans-serif;                                             
     background: url(/static/image/WallpaperDark.20d3d6f6\ \(1\).jpg) no-repeat 50% fixed;
     background-size: cover;
@@ -23,11 +24,10 @@ body {
     padding: 10px 20px;
     width: 50%;
     margin-top: 6%;
-    font-size: larger;
 }
 
 .button {
-    margin-top: 5%;
+    margin-top: 10%;
 }
 
 a#suivant {
