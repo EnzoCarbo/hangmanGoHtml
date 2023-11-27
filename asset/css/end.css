@@ -24,6 +24,12 @@ h1 {
     margin: 6%;
 }
 
+.yuumi {
+    display: flex;
+    justify-content: center;
+    margin: 6%;
+}
+
 .button {
     display: flex;
     justify-content: center;
